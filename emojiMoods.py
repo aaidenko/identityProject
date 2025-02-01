@@ -1,6 +1,9 @@
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+from flask import Flask, render_template
+
+app = Flask(__name__)
 
 load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
@@ -16,16 +19,24 @@ def interpretEmojis(emojis):
         print("Error: ") + e
         return None
 
-def main():
-    emojis = input("Describe your mood using some emojis: ")
-    print("\nProcessing...\n")
-    result = interpretEmojis(emojis)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-    if result:
-        print("Generated words: ")
-        print(result)
-    else:
-        print("Failed to generate.")
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 if __name__ == "__main__":
-    main()
+    app.run(debug=True)
+
+# def main():
+#     emojis = input("Describe your mood using some emojis: ")
+#     print("\nProcessing...\n")
+#     result = interpretEmojis(emojis)
+
+#     if result:
+#         print("Generated words: ")
+#         print(result)
+#     else:
+#         print("Failed to generate.")
