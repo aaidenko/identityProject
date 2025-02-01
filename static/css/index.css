@@ -1,0 +1,164 @@
+.seoulnyc-1-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1457px;
+  height: 1024px;
+  object-fit: cover;
+}
+.nycseoul2-1-icon1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 1024px;
+  object-fit: cover;
+  display: none;
+}
+.feelfluent2 {
+  position: absolute;
+  top: 11px;
+  left: 237px;
+  display: inline-block;
+  font-family: var(--font-reddit-sans);
+  width: 160px;
+  height: 45px;
+}
+.about2 {
+  position: absolute;
+  top: 11px;
+  left: 1078px;
+  font-family: var(--font-reddit-sans);
+  display: inline-block;
+  width: 94px;
+  height: 45px;
+}
+.home2 {
+  position: absolute;
+  top: 11px;
+  left: 997px;
+  text-decoration: underline;
+  font-family: var(--font-reddit-sans);
+  display: inline-block;
+  width: 76px;
+  height: 45px;
+}
+.feelfluent3 {
+  position: absolute;
+  top: 357px;
+  left: 489px;
+  font-size: var(--font-size-77xl);
+  font-weight: 500;
+  font-family: var(--font-reddit-sans);
+  display: inline-block;
+  width: 480px;
+  height: 126px;
+}
+.express-in-emojis {
+  position: absolute;
+  top: 483px;
+  left: 444px;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: var(--font-reddit-sans);
+}
+.submit-button-child {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 32px;
+  background-color: var(--color-gainsboro);
+  width: 105px;
+  height: 40px;
+}
+.submit {
+  position: absolute;
+  top: 9px;
+  left: 17px;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  display: flex;
+  font-family: var(--font-reddit-sans);
+  color: #000;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 71.1px;
+  height: 22.8px;
+}
+.submit-button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 627px;
+  left: 676px;
+  width: 105px;
+  height: 40px;
+}
+.text-input {
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-family: var(--font-reddit-sans);
+  font-size: var(--font-size-base);
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 558px;
+  left: 556px;
+  border-radius: 16px;
+  width: 345px;
+  height: 41px;
+  padding: 11px 13px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.41);
+}
+.word-this-container {
+  position: absolute;
+  top: 838px;
+  left: 646px;
+}
+.word-this-container1 {
+  position: absolute;
+  top: 692px;
+  left: 997px;
+}
+.word-this-container2 {
+  position: absolute;
+  top: 716px;
+  left: 100px;
+}
+.word-this-container3 {
+  position: absolute;
+  top: 152px;
+  left: 122px;
+}
+.word-this-container4 {
+  position: absolute;
+  top: 259px;
+  left: 422px;
+  display: inline-block;
+  width: 389px;
+  height: 23px;
+}
+.word-this-container5 {
+  position: absolute;
+  top: 176px;
+  left: 997px;
+  display: inline-block;
+  width: 389px;
+  height: 23px;
+}
+.home1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
