@@ -6,7 +6,6 @@
     <title>feelFluent</title>
 
     <meta name="description" content="Express in emojis. Discover in words." />
-    <!-- Use url_for to reference CSS files in the static folder -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
     <link
@@ -28,7 +27,6 @@
       />
 
       <b class="feelfluent2">feelFluent</b>
-      <!-- <div class="about2">about</div> -->
       <a class="about2" href="{{ url_for('about') }}">about</a>
       <div class="home2">home</div>
       <div class="feelfluent3">feelFluent</div>
@@ -38,6 +36,7 @@
         <b class="submit">Submit</b>
       </button>
       <input class="text-input" type="text" />
+      <div class="emoji-instructions">To see emojis: [Windows - WinKey + .] [Mac - Fn + E]</div>
 
       <div class="word-this-container">
         <b>Word - </b>
@@ -67,9 +66,6 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        console.log("JavaScript Loaded"); //debugging 
-
-        // Hide all placeholder text boxes
         const textBoxes = document.querySelectorAll(".word-this-container, .word-this-container1, .word-this-container2, .word-this-container3, .word-this-container4, .word-this-container5");
         textBoxes.forEach(box => box.style.display = "none");
     
@@ -78,12 +74,10 @@
         const inputField = document.querySelector(".text-input");
     
         submitButton.addEventListener("click", async function () {
-          console.log("Submit button clicked"); // Debugging log
-
           const inputValue = inputField.value.trim();
-          if (!inputValue) return; // Prevent empty input submission
+          if (!inputValue) return;
     
-          submitText.textContent = "Loading..."; // Show loading state
+          submitText.textContent = "Loading...";
     
           try {
             const response = await fetch("/process_input", {

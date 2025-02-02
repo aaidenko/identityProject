@@ -1,11 +1,10 @@
-.nycseoul2-1-icon1 {
+.seoulnyc-1-icon {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  min-width: 100vw;
-  min-height: 100vh;
-  object-fit: cover;
-  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
 }
 .feelfluent2 {
   position: absolute;
@@ -51,7 +50,7 @@
 }
 .express-in-emojis {
   position: absolute;
-  top: 40%;
+  top: 42.5%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;
@@ -89,7 +88,7 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 50%;
+  top: 57.5%;
   left: 50%;
   transform: translateX(-50%);
   width: 105px;
@@ -103,7 +102,7 @@
   font-size: var(--font-size-base);
   background-color: var(--color-gainsboro);
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 16px;
@@ -113,44 +112,54 @@
   box-sizing: border-box;
   color: rgba(0, 0, 0, 1);
 }
+.emoji-instructions {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 200;
+  font-family: var(--font-reddit-sans);
+  color: rgba(255, 255, 255, 0.4);
+}
 .word-this-container {
   position: absolute;
   top: 73%;
-  left: 45%;
+  left: 40%;
 }
 .word-this-container1 {
   position: absolute;
   top: 57%;
-  left: 67%;
+  left: 62%;
 }
 .word-this-container2 {
   position: absolute;
   top: 63%;
-  left: 13%;
+  left: 8%;
 }
 .word-this-container3 {
   position: absolute;
-  top: 28%;
-  left: 7%;
+  top: 26%;
+  left: 2%;
 }
 .word-this-container4 {
   position: absolute;
   top: 17%;
-  left: 32%;
+  left: 27%;
 }
 .word-this-container5 {
   position: absolute;
   top: 26%;
-  left: 72%;
+  left: 67%;
 }
 .home1 {
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw; 
+  min-height: 100vh; 
   position: relative;
   background-color: var(--color-gray-100);
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-white);
-  font-family: var(--font-inter);
+  font-family: var(--font-reddit-sans);
 }

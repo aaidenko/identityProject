@@ -13,9 +13,9 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 def interpretEmojis(user_input):
     try:
         prompt = f"""
-        Given this emoji input: {user_input}, generate three advanced, difficult, obscure English words and three advanced Korean words, but all of them with English definitions.
+        Given this emoji input: {user_input}, generate three advanced, difficult, obscure English words (words that are beyond a college student's level) and three advanced Korean words, but all of them with English definitions.
         These words should be those that best encapsulate ALL of the emojis, as the emojis have been picked in that combination to try to describe a certain mood.
-        Format each as 'Word - Definition'.
+        Format each as 'Word - Definition'. Keep the definitions fairly short.
         Do not add any extra content to your response outside of the six words and their english definitions. Each word-definition pair should be on their own line.
         """
 
