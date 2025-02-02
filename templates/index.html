@@ -33,7 +33,7 @@
       <div class="home2">home</div>
       <div class="feelfluent3">feelFluent</div>
       <div class="express-in-emojis">Express in emojis. Discover in words.</div>
-      <button class="submit-button">
+      <button class="submit-button" type="button">
         <div class="submit-button-child"></div>
         <b class="submit">Submit</b>
       </button>
@@ -67,6 +67,8 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        console.log("JavaScript Loaded"); //debugging 
+
         // Hide all placeholder text boxes
         const textBoxes = document.querySelectorAll(".word-this-container, .word-this-container1, .word-this-container2, .word-this-container3, .word-this-container4, .word-this-container5");
         textBoxes.forEach(box => box.style.display = "none");
@@ -76,6 +78,8 @@
         const inputField = document.querySelector(".text-input");
     
         submitButton.addEventListener("click", async function () {
+          console.log("Submit button clicked"); // Debugging log
+
           const inputValue = inputField.value.trim();
           if (!inputValue) return; // Prevent empty input submission
     
