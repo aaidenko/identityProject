@@ -55,4 +55,4 @@ def process_input():
     return jsonify({"output": words_and_definitions})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
