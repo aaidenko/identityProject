@@ -1,7 +1,7 @@
+from flask import Flask, request, jsonify, render_template
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
-from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -27,16 +27,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/process_input')
+def process_input():
+    
+
 if __name__ == "__main__":
     app.run(debug=True)
-
-# def main():
-#     emojis = input("Describe your mood using some emojis: ")
-#     print("\nProcessing...\n")
-#     result = interpretEmojis(emojis)
-
-#     if result:
-#         print("Generated words: ")
-#         print(result)
-#     else:
-#         print("Failed to generate.")

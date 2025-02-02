@@ -64,5 +64,45 @@
         <span>This is the definition for the word.</span>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Hide all placeholder text boxes
+        const textBoxes = document.querySelectorAll(".word-this-container, .word-this-container1, .word-this-container2, .word-this-container3, .word-this-container4, .word-this-container5");
+        textBoxes.forEach(box => box.style.display = "none");
+    
+        const submitButton = document.querySelector(".submit-button");
+        const submitText = submitButton.querySelector(".submit");
+        const inputField = document.querySelector(".text-input");
+    
+        submitButton.addEventListener("click", async function () {
+          const inputValue = inputField.value.trim();
+          if (!inputValue) return; // Prevent empty input submission
+    
+          submitText.textContent = "Loading..."; // Show loading state
+    
+          try {
+            const response = await fetch("/process_input", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ input: inputValue }),
+            });
+    
+            const data = await response.json();
+            if (data && data.output && data.output.length === 6) {
+              textBoxes.forEach((box, index) => {
+                box.style.display = "block"; // Unhide boxes
+                box.innerHTML = `<b>${data.output[index].word} - </b> <span>${data.output[index].definition}</span>`; // Fill content
+              });
+            }
+          } catch (error) {
+            console.error("Error:", error);
+          } finally {
+            submitText.textContent = "Submit";
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>

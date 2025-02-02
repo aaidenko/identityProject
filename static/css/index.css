@@ -1,42 +1,36 @@
-.seoulnyc-1-icon {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 1457px;
-  height: 1024px;
-  object-fit: cover;
-}
 .nycseoul2-1-icon1 {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 1440px;
-  height: 1024px;
+  min-width: 100vw;
+  min-height: 100vh;
   object-fit: cover;
   display: none;
 }
 .feelfluent2 {
   position: absolute;
-  top: 11px;
-  left: 237px;
+  top: 1%;
+  left: 10%;
   display: inline-block;
   font-family: var(--font-reddit-sans);
-  width: 160px;
+  width: 160px; 
   height: 45px;
 }
 .about2 {
   position: absolute;
-  top: 11px;
-  left: 1078px;
+  top: 1%;
+  left: 85%;
   font-family: var(--font-reddit-sans);
   display: inline-block;
   width: 94px;
   height: 45px;
+  color: white !important;
+  text-decoration: none !important;
 }
 .home2 {
   position: absolute;
-  top: 11px;
-  left: 997px;
+  top: 1%;
+  left: 80%;
   text-decoration: underline;
   font-family: var(--font-reddit-sans);
   display: inline-block;
@@ -45,8 +39,9 @@
 }
 .feelfluent3 {
   position: absolute;
-  top: 357px;
-  left: 489px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: var(--font-size-77xl);
   font-weight: 500;
   font-family: var(--font-reddit-sans);
@@ -56,8 +51,9 @@
 }
 .express-in-emojis {
   position: absolute;
-  top: 483px;
-  left: 444px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 36px;
   font-weight: 300;
   font-family: var(--font-reddit-sans);
@@ -93,8 +89,9 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 627px;
-  left: 676px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 105px;
   height: 40px;
 }
@@ -106,8 +103,9 @@
   font-size: var(--font-size-base);
   background-color: var(--color-gainsboro);
   position: absolute;
-  top: 558px;
-  left: 556px;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 16px;
   width: 345px;
   height: 41px;
@@ -117,45 +115,39 @@
 }
 .word-this-container {
   position: absolute;
-  top: 838px;
-  left: 646px;
+  top: 73%;
+  left: 45%;
 }
 .word-this-container1 {
   position: absolute;
-  top: 692px;
-  left: 997px;
+  top: 57%;
+  left: 67%;
 }
 .word-this-container2 {
   position: absolute;
-  top: 716px;
-  left: 100px;
+  top: 63%;
+  left: 13%;
 }
 .word-this-container3 {
   position: absolute;
-  top: 152px;
-  left: 122px;
+  top: 28%;
+  left: 7%;
 }
 .word-this-container4 {
   position: absolute;
-  top: 259px;
-  left: 422px;
-  display: inline-block;
-  width: 389px;
-  height: 23px;
+  top: 17%;
+  left: 32%;
 }
 .word-this-container5 {
   position: absolute;
-  top: 176px;
-  left: 997px;
-  display: inline-block;
-  width: 389px;
-  height: 23px;
+  top: 26%;
+  left: 72%;
 }
 .home1 {
-  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   position: relative;
   background-color: var(--color-gray-100);
-  height: 1024px;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-xl);
